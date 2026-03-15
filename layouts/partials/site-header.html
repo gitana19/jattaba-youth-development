@@ -1,0 +1,21 @@
+{{ $featured_image := .Params.featured_image | default .Site.Params.featured_image }}
+{{ if $featured_image }}
+  <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
+{{ else }}
+  <header class="bg-black">
+{{ end }}
+    <div class="bg-black-60" style="display: flex; flex-direction: column; min-height: 250px;">
+      <nav class="pv3 ph3 ph4-m ph5-l" role="navigation">
+        <div class="flex-l justify-end items-center center">
+          <div class="flex-l items-center">
+            {{ partial "site-navigation.html" . }}
+          </div>
+        </div>
+      </nav>
+      <div class="tc ph3 ph4-ns pb4" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+        <a href="{{ .Site.BaseURL }}">
+          <img src="/images/logo.png" alt="{{ .Site.Title }}" style="max-height: 250px; width: auto;">
+        </a>
+      </div>
+    </div>
+  </header>

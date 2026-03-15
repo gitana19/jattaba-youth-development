@@ -1,0 +1,68 @@
+# baseURL = "https://gitana19.github.io/Jattaba-youth-development-association/"
+baseURL = "http://localhost:1313/"
+languageCode = "en"
+title = "Jattaba Youth Development Association"
+theme = "ananke"
+enableRobotsTXT = true
+
+# Disable theme's default menus
+disableKinds = []
+
+# Only use menus defined in this config
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  description = "Empowering youth through development programs and community engagement."
+  author = "Your Name"
+  keywords = ["youth", "development", "association", "community", "programs", "events"]
+  # Disable theme's recent posts section
+  show_reading_time = false
+  recent_posts_number = 0
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 4
+
+    [[menu.main]]
+    identifier = "reports"
+    name = "Reports"
+    url = "/reports/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Annual Subscription"
+    url = "/subscription/"
+    weight = 7
+
+  [[menu.main]]
+    name = "Donation"
+    url = "/donation/"
+    weight = 8
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

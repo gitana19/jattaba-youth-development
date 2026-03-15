@@ -1,0 +1,202 @@
+/* Gallery image styling */
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Two-column image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    align-items: end;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.image-grid p {
+    margin: 0;
+}
+
+/* Make the main content area wider on Projects page */
+body.projects-page .measure-wide {
+    max-width: 80rem !important;
+}
+
+body.projects-page article {
+    max-width: 80rem !important;
+}
+
+/* Single full-width image */
+.image-single {
+    margin: 2rem 0;
+}
+
+.image-single img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive: single column on mobile */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Image captions (the italic text below images) */
+.content em {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Section headings for each project - DARK GREEN */
+.content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2d5016;
+    color: #2d5016;
+}
+
+/* Main page title - DARK GREEN */
+.content h1 {
+    color: #2d5016;
+}
+
+/* Paragraph text in project sections */
+.content p {
+    margin-bottom: 1rem;
+}
+
+/* Change all black headings to dark green */
+h1, h2, h3, h4, h5, h6 {
+    color: #2d5016 !important;
+}
+
+/* Change blue banner backgrounds to dark green */
+.bg-blue,
+.bg-dark-blue,
+header {
+    background-color: #2d5016 !important;
+}
+
+/* Change blue links and underlines to dark green */
+a,
+.blue,
+.dark-blue {
+    color: #2d5016 !important;
+}
+
+/* Change blue borders to dark green */
+.ba--blue,
+.b--blue,
+.border-blue {
+    border-color: #2d5016 !important;
+}
+
+/* Change navigation hover color */
+nav a:hover {
+    color: #4a7c2c !important;
+}
+
+/* Change black header and footer to dark green */
+.bg-black,
+.bg-near-black,
+header,
+footer {
+    background-color: #2d5016 !important;
+}
+
+/* Keep header/footer text and links white for contrast */
+header a,
+header h1,
+header h2,
+header h3,
+footer a,
+footer h1,
+footer h2,
+footer h3,
+.bg-black a,
+.bg-black h1,
+.bg-black h2,
+.bg-near-black a,
+.bg-near-black h1,
+.bg-near-black h2 {
+    color: white !important;
+}
+
+header a:hover,
+footer a:hover {
+    color: #c0e0a0 !important;
+}
+
+/* Verstecke alle Texte im Header außer Navigation und Logo */
+header a:not(nav a):not(:has(img)) {
+    display: none !important;
+}
+
+/* Verstecke den spezifischen Jattaba Link */
+header a.f3.fw2.dib {
+    display: none !important;
+}
+
+/* Alternativ: Verstecke alle dib Links im Header außer in der Navigation */
+header > div > nav ~ * a.dib,
+header .bg-black-60 > a.dib {
+    display: none !important;
+}
+
+/* Noch stärkere Regel */
+a[href="/"].f3.fw2 {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Falls der Link einen anderen href hat */
+a[href="/"].dib,
+a.f3.fw2.hover-white.white-90.dib {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Einheitliche Schriftart für alle Seiten - Avenir Next */
+body,
+article,
+.content,
+p,
+div,
+span,
+h1, h2, h3, h4, h5, h6,
+a,
+li,
+td,
+th {
+    font-family: "avenir next", avenir, -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif !important;
+}
+
+/* Entferne die Serif-Schriftart aus dem Content-Bereich */
+.content {
+    font-family: "avenir next", avenir, sans-serif !important;
+}
+
+.serif {
+    font-family: "avenir next", avenir, sans-serif !important;
+}
