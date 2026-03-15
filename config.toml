@@ -1,5 +1,5 @@
-# baseURL = "https://gitana19.github.io/Jattaba-youth-development-association/"
-baseURL = "http://localhost:1313/"
+baseURL = "https://gitana19.github.io/jattaba-youth-development/"
+# baseURL = "http://localhost:1313/"
 languageCode = "en"
 title = "Jattaba Youth Development Association"
 theme = "ananke"
